@@ -71,7 +71,6 @@ fun AppMenuCard(title: String, description: String, number: String, onClick: () 
       fontWeight = FontWeight.ExtraBold,
       modifier = Modifier.align(Alignment.CenterStart)
     )
-
     Column(
       horizontalAlignment = Alignment.CenterHorizontally,
       verticalArrangement = Arrangement.Center,
