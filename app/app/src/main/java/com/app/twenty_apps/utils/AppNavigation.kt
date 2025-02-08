@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.app.twenty_apps.screens.ChronometerScreen
 import com.app.twenty_apps.screens.LanternScreen
 import com.app.twenty_apps.screens.MenuScreen
 
@@ -14,5 +15,6 @@ fun AppNavigation() {
   NavHost(navController = navController, startDestination = "MenuScreen"){
     composable("MenuScreen") { MenuScreen(navController) }
     composable("LanternScreen") { LanternScreen(navController) }
+    composable("ChronometerScreen") { ChronometerScreen(navController)  }
   }
 }
