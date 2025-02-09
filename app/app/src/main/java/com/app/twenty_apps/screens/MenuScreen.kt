@@ -100,9 +100,9 @@ fun MenuScreen(navController: NavController) {
         onClick = {})
       AppMenuCard(
         number = "2",
-        title = "Chronometer ⌚",
-        description = "Simple chronometer app",
-        onClick = {})
+        title = "StopWatch ⌚",
+        description = "Simple StopWatch app",
+        onClick = {navController.navigate("StopWatchScreen")})
       AppMenuCard(
         number = "3",
         title = "NotePad 📝",
