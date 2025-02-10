@@ -52,16 +52,20 @@ fun AppMenuCard(title: String, description: String, number: String, onClick: () 
       .pointerInput(Unit) {
         detectTapGestures(
           onPress = {
-            if(isClickable){
+            if (isClickable) {
               isPressed = true
-              tryAwaitRelease()
+              val release = tryAwaitRelease()
               isPressed = false
-              onClick()
-              isClickable = false
+              if (release) { // Solo ejecuta onClick si el usuario realmente soltó el toque
+                isClickable = false
+                onClick()
+              }
             }
           }
         )
       }
+
+
   ) {
     Text(
       text = number,
