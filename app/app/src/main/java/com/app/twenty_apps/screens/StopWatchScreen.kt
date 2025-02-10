@@ -61,7 +61,7 @@ fun StopWatchScreen(navController: NavController) {
   }
 }
 
-fun formatTime(timeMillis: Long): String {
+private fun formatTime(timeMillis: Long): String {
   val seconds = (timeMillis / 1000) % 60
   val minutes = (timeMillis / 60000) % 60
   val milliseconds = (timeMillis % 1000) / 10
