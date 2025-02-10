@@ -107,13 +107,13 @@ fun MenuScreen(navController: NavController) {
         number = "3",
         title = "NotePad 📝",
         description = "Simple notepad app",
-        onClick = {})
+        onClick = {navController.navigate("NotePadScreen")})
       AppMenuCard(
         number = "4",
         title = "To-Do list 📃",
         description = "Simple to-do list app",
         onClick = {})
-      AppMenuCard(number = "5", title = "Timer ⌚", description = "Simple timer app", onClick = {})
+      AppMenuCard(number = "5", title = "Timer ⌚", description = "Simple timer app", onClick = {navController.navigate("TimerScreen")})
       AppMenuCard(
         number = "6",
         title = "Unit converter 🧪",
